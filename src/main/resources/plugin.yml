@@ -1,0 +1,27 @@
+name: SimpleOreLogger
+version: '${project.version}'
+main: net.simple.orelogger.SimpleOreLoggerPlugin
+api-version: '1.20'
+author: No_KessPen
+description: OreLogger - собирает статистику кто, когда и сколько накопал
+commands:
+  orelogger:
+    description: Показывает список выкопанных блоков
+    aliases: [orelog, orel, olog]
+    permission: simple.orelogger.orelogger
+permissions:
+  simple.orelogger.*:
+    description: Доступ ко всему
+    children:
+      simple.orelogger.orelogger.*: true
+  simple.orelogger.orelogger.*:
+    description: Доступ ко всем функциям orelogger
+    children:
+      simple.orelogger.orelogger.statistics: true
+      simple.orelogger.orelogger.logs: true
+  simple.orelogger.orelogger.statistics:
+    description: Посмотреть статистику блоков за определённое время
+    default: op
+  simple.orelogger.orelogger.logs:
+    description: Посмотреть последние выкопанные блоки
+    default: op

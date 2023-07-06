@@ -1,0 +1,11 @@
+net\simple\orelogger\database\OreLogsDatabase.class
+net\simple\orelogger\listeners\BlockBreakListener.class
+net\simple\orelogger\commands\LogsLookupCommand.class
+net\simple\orelogger\task\DatabaseTaskUpdater.class
+net\simple\orelogger\database\DataSource.class
+net\simple\orelogger\database\OreLogsTable.class
+net\simple\orelogger\utils\ColorText.class
+net\simple\orelogger\commands\LogsLookupTab.class
+net\simple\orelogger\listeners\BlockPlaceListener.class
+net\simple\orelogger\config\MainConfig.class
+net\simple\orelogger\SimpleOreLoggerPlugin.class
