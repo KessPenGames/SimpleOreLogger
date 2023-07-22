@@ -115,4 +115,17 @@ public interface MainConfig extends Config {
     default List<String> getLogsFooter() {
         return List.of("===============");
     }
+
+    @Comment("Верхняя часть сообщения топа")
+    default List<String> getTopHeader() {
+        return Arrays.asList("&eТоп по %ore_color%%ore_type%", "&bТоп игроков добывших больше %count%");
+    }
+    @Comment("Паттерн сообщения топа о количестве добытой руды")
+    default String getTopOre() {
+        return "&e%player% &r- %count%";
+    }
+    @Comment("Нижняя часть сообщения топа")
+    default List<String> getTopFooter() {
+        return List.of("===============");
+    }
 }

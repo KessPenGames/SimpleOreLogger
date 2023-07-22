@@ -19,9 +19,13 @@ permissions:
     children:
       simple.orelogger.orelogger.statistics: true
       simple.orelogger.orelogger.logs: true
+      simple.orelogger.orelogger.top: true
   simple.orelogger.orelogger.statistics:
     description: Посмотреть статистику блоков за определённое время
     default: op
   simple.orelogger.orelogger.logs:
     description: Посмотреть последние выкопанные блоки
+    default: op
+  simple.orelogger.orelogger.top:
+    description: Посмотреть игроков которые выкопали больше определенного количества определнной руды
     default: op

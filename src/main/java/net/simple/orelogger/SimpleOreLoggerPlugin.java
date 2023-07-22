@@ -75,6 +75,6 @@ public final class SimpleOreLoggerPlugin extends JavaPlugin {
             return;
         }
         command.setExecutor(new LogsLookupCommand(config, database));
-        command.setTabCompleter(new LogsLookupTab());
+        command.setTabCompleter(new LogsLookupTab(config));
     }
 }
